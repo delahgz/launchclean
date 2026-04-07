@@ -73,14 +73,13 @@ export default function Page(){
 <Fade d={.16}><p style={{fontFamily:ins,fontSize:"clamp(15px,2vw,18px)",color:"#94A3B8",lineHeight:1.75,maxWidth:560,margin:"0 auto 32px"}}>The complete system: 33 milestones, 15 scripts, 8 revenue streams, pricing calculator, operations bible, and trained VA deployment. No fluff. No theory. Just what works.</p></Fade>
 <Fade d={.24}>
 {!sent?<div style={{display:"flex",gap:8,maxWidth:440,margin:"0 auto",flexWrap:"wrap",justifyContent:"center"}}>
-<input type="email" placeholder="Enter your email" value={email} onChange={e=>setEmail(e.target.value)} style={{flex:"1 1 240px",padding:"14px 18px",borderRadius:10,border:"1px solid rgba(255,255,255,.1)",background:"rgba(255,255,255,.05)",color:"#fff",fontSize:15,fontFamily:ins,outline:"none"}}/>
-<Btn big onClick={()=>{if(email.includes("@"))setSent(true)}}>Get the Free Guide →</Btn>
+<Btn big onClick={()=>window.open('https://launchclean.kit.com/systems','_blank')}>Get the Free Guide →</Btn>
 </div>
 :<div style={{background:"rgba(22,163,74,.1)",border:"1px solid rgba(22,163,74,.25)",borderRadius:12,padding:"16px 24px",maxWidth:440,margin:"0 auto"}}>
 <div style={{fontFamily:dm,fontSize:16,fontWeight:700,color:"#4ADE80",marginBottom:4}}>Check your inbox!</div>
 <div style={{fontFamily:ins,fontSize:13,color:"#94A3B8"}}>Your free guide is on its way. Scroll down to see the full system.</div>
 </div>}
-<p style={{fontFamily:ins,fontSize:12,color:"#475569",marginTop:12}}>Free 18-page PDF. No spam. Unsubscribe anytime.</p>
+<p style={{fontFamily:ins,fontSize:12,color:"#475569",marginTop:12}}>Free 25-page PDF. No spam. Unsubscribe anytime.</p>
 </Fade>
 <Fade d={.32}>
 <div style={{display:"flex",justifyContent:"center",gap:28,marginTop:48,flexWrap:"wrap"}}>
