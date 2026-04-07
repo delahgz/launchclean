@@ -33,15 +33,15 @@ export default function Page(){
     {name:"Self-Serve Kit",price:67,payPlan:null,tag:"DIY operators",
     feat:["Interactive 33-milestone launch plan","Pricing calculator with revenue projections","15 copy-paste scripts (outreach, sales, retention, growth)","8 recurring revenue stream playbooks","Contractor screening + trial scorecard","30-day printable launch checklist","Client lifecycle framework","Exit metrics tracker","All future updates included"],
     not:["Strategy call","Website build","VA/ops deployment","Coaching"],
-    cta:"Get the Kit",pop:false},
+    cta:"Get the Kit",pop:false,link:"https://buy.stripe.com/fZu28qceIfQC0qG7NCbQY02"},
     {name:"Full System",price:447,payPlan:{amt:159,n:3},tag:"Most popular",
     feat:["Everything in Self-Serve Kit","1-hour strategy call with an operator","Custom pricing model review for your suburbs","Google Business Profile optimisation audit","Personalised 30-day action plan","Priority email support (90 days)","Operations SOP manual template","Exit metrics tracking template","Community membership (3 months free)","Property manager outreach kit"],
     not:["Website build","VA/ops deployment"],
-    cta:"Get the Full System",pop:true},
+    cta:"Get the Full System",pop:true,link:"https://buy.stripe.com/14A9AS92wgUGc9od7WbQY00"},
     {name:"Done With You",price:1497,payPlan:{amt:399,n:4},tag:"Launch ready in 2 weeks",
     feat:["Everything in Full System","Website built and deployed for you","Booking Koala + Stripe fully configured","Trained VA deployed for 30 days","4 weekly coaching calls (1-on-1)","Google Business Profile fully optimised","First 5 outreach messages crafted with you","Cleaning checklists customised to your services","Contractor agreement drafted","Community membership (12 months)","Direct WhatsApp access to your coach","Priority access to managed operations service"],
     not:[],
-    cta:"Apply for Done-With-You",pop:false},
+    cta:"Apply for Done-With-You",pop:false,link:"mailto:info@maidforyou.com.au?subject=Done-With-You%20Application&body=Hi%2C%20I%20am%20interested%20in%20the%20Done-With-You%20tier.%20Please%20send%20me%20the%20application%20details."},
   ];
 
   return(
@@ -264,13 +264,13 @@ export default function Page(){
 </div>)}
 </div>
 
-<Btn big={t.pop} outline={!t.pop&&i===0} s={{width:"100%",justifyContent:"center"}}>{t.cta}</Btn>
+<Btn big={t.pop} outline={!t.pop&&i===0} s={{width:"100%",justifyContent:"center"}} onClick={()=>window.open(t.link,'_blank')}>{t.cta}</Btn>
 {i===2&&<p style={{fontFamily:ins,fontSize:10,color:"#64748B",textAlign:"center",marginTop:8}}>Application required. Limited spots.</p>}
 </div></Fade>)}
 </div>
 
 {/* Order bump */}
-<Fade d={.4}><div style={{maxWidth:600,margin:"24px auto 0",background:"#fff",borderRadius:14,padding:"18px 22px",border:`2px dashed ${orange}`,display:"flex",gap:14,alignItems:"flex-start"}}>
+<Fade d={.4}><div onClick={()=>window.open('https://buy.stripe.com/5kQaEW4MgfQCc9o6JybQY01','_blank')} style={{maxWidth:600,margin:"24px auto 0",background:"#fff",borderRadius:14,padding:"18px 22px",border:`2px dashed ${orange}`,display:"flex",gap:14,alignItems:"flex-start",cursor:"pointer"}}>
 <div style={{width:22,height:22,borderRadius:6,border:`2px solid ${orange}`,flexShrink:0,marginTop:2,display:"flex",alignItems:"center",justifyContent:"center",cursor:"pointer"}}>
 <div style={{width:12,height:12,borderRadius:3,background:orange}}/>
 </div>
